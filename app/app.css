@@ -16,10 +16,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family:
     var(--font-jost), var(--font-montserrat), var(--font-inter), sans-serif;
+  color: #000;
   overflow-x: hidden;
   background: linear-gradient(180deg, #346c1e 0%, #fff 30%);
 }
