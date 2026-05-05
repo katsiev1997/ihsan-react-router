@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
@@ -12,4 +13,17 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family:
+    var(--font-jost), var(--font-montserrat), var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(180deg, #346c1e 0%, #fff 30%);
+}
+
+.gradient-bottom {
+  background: linear-gradient(180deg, #fff 0%, #346c1e 100%);
 }
