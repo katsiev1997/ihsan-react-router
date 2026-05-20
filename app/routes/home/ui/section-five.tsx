@@ -1,5 +1,5 @@
 import React from "react";
-import { news } from "../model/news";
+import { NewsContent } from "../model/news";
 
 const data = [
   {
@@ -39,7 +39,7 @@ export const SectionFive = () => {
       <h2 className="text-[50px] text-[#2b5b18] font-semibold">НОВОСТИ</h2>
       <div className="w-full rounded-2xl bg-[#f8faf5] p-5 lg:p-8">
         <p className="text-base lg:text-lg leading-relaxed whitespace-pre-line">
-          {news}
+          <NewsContent />
         </p>
       </div>
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
